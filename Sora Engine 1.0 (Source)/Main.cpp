@@ -13,7 +13,7 @@ const std::string TITLE = "Pickin' Sticks SFML Version 1";
 int main()
 {
 	sf::Vector2i WindowDimensions(1280, 720);
-	sf::RenderWindow Window(sf::VideoMode(WindowDimensions.x, WindowDimensions.y), TITLE, sf::Style::Close);
+	sf::RenderWindow Window(sf::VideoMode(WindowDimensions.x, WindowDimensions.y), TITLE);
 
 	Window.setKeyRepeatEnabled(false);
 
@@ -25,7 +25,7 @@ int main()
 	sf::Clock clock;
 
 	float curMoveSpeed = 0;
-	float maxMoveSpeed = 2.5f;
+	float maxMoveSpeed = 3.5f;
 	int curSticksPicked = 0;
 	sf::Music bgMusic;
 
@@ -69,7 +69,8 @@ int main()
 		Ok = 10,
 		Awesome = 20,
 		Posh = 30,
-		SWANKY = 40
+		SWANKY = 40,
+		Evil = 100
 	};
 
 	Ranks curRank = Bad;
@@ -118,8 +119,8 @@ int main()
 	if(curSticksPicked >= 0)
 	{
 		curRank = Bad;
-		curRankString = "Eww....";
-		curMoveSpeed = 0.25f;
+		curRankString = "..meh";
+		curMoveSpeed = 0.1f * maxMoveSpeed;
 	}
 
 	if(curSticksPicked >= 10)
@@ -148,6 +149,13 @@ int main()
 		curRank = SWANKY;
 		curRankString = "ULTRA COMBO!!!";
 		curMoveSpeed = maxMoveSpeed;
+	}
+
+	if(curSticksPicked >= 100)
+	{
+		curRank = Evil;
+		curRankString = "TROLOLOL!!!!";
+		curMoveSpeed = maxMoveSpeed * 2.5;
 	}
 		
 	sf::Text ScoreText;
@@ -181,6 +189,10 @@ int main()
                 Window.close();
         }
 
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::T))
+		{
+			curSticksPicked++;
+		}
 
 		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || 
 		   sf::Keyboard::isKeyPressed(sf::Keyboard::S))
@@ -274,8 +286,7 @@ int main()
 		Window.draw(SpeedText);
 		Window.draw(RankText);
 
-        Window.display();
-		Window.clear(sf::Color::Green);
+		Window.display();
     }
 
 	return EXIT_SUCCESS;
