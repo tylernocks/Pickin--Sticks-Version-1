@@ -1,0 +1,10 @@
+﻿  Main.cpp
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(39): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(44): warning C4390: ';' : empty controlled statement found; is this the intent?
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(44): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(51): warning C4390: ';' : empty controlled statement found; is this the intent?
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(97): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(104): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(111): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\users\tylernocks\desktop\users\tylernocks files\programs\c and c++\sora engine\sora engine 1.0 (source)\sora engine 1.0 (source)\main.cpp(231): warning C4018: '>=' : signed/unsigned mismatch
+  Sora Engine 1.0 (Source).vcxproj -> C:\Users\TylerNocks\Desktop\Users\TylerNocks Files\Programs\C and C++\Sora Engine\Sora Engine 1.0 (Source)\Debug\Sora Engine 1.0 (Source).exe

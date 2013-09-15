@@ -1,0 +1,11 @@
+﻿  Main.cpp
+Main.cpp(47): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Main.cpp(52): warning C4390: ';' : empty controlled statement found; is this the intent?
+Main.cpp(52): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Main.cpp(59): warning C4390: ';' : empty controlled statement found; is this the intent?
+Main.cpp(86): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Main.cpp(112): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+Main.cpp(263): warning C4018: '>=' : signed/unsigned mismatch
+  Generating code
+  Finished generating code
+  Sora Engine 1.0 (Source).vcxproj -> C:\Users\TylerNocks\Desktop\Users\TylerNocks Files\Programs\C and C++\Pickin' Sticks V1\Sora Engine 1.0 (Source)\Release\Pickin' Sticks V1.exe
